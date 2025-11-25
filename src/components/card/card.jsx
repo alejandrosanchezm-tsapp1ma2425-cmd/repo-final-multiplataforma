@@ -1,6 +1,6 @@
 import './card.css'
 
-const Card = ({ name, imageUrl, action }) => {
+const Card = ({ name, imageUrl, action, }) => {
   return (
     <div 
         onClick={action}

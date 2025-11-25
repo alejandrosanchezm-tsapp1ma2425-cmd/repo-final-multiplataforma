@@ -18,7 +18,7 @@ function App() {
       <div className='fondonegro '>
       <Routes>
         <Route path="/list" element={<List />}/>
-        <Route path="/details" element={<Details />}/>
+        <Route path="/details/:id" element={<Details />}/>
         <Route path='/profile' element={<Profile />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/aboutus' element={<AboutUs />}/>
