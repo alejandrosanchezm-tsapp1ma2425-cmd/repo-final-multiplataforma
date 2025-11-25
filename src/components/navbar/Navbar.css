@@ -1,3 +1,47 @@
-.fondo{
-    background-color: rgb(255, 255, 255);
+/* Fondo animado estilo espacio */
+.fondo {
+  background: black;
+  
+  overflow: hidden;
+}
+
+/* Capa de estrellas */
+.fondo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 200%; height: 200%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: moveStars 60s linear infinite;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+/* Contenido encima */
+.navbar .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+.navbar-brand,
+.nav-link {
+  color: #ffe81f !important; /* amarillo Star Wars */
+  position: relative;
+  z-index: 2;
+}
+
+.nav-link:hover {
+  color: #fff !important; /* blanco al pasar el ratón */
+  text-shadow: 0 0 8px #ffe81f;
+}
+
+.nav-link.active {
+  color: #ffe81f !important;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ffe81f;
+}
+
+/* Animación de movimiento */
+@keyframes moveStars {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-50%, -50%); }
 }
