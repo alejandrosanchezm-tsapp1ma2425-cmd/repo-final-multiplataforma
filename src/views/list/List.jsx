@@ -66,7 +66,6 @@ const List = () => {
                                         <Card
                                             name={droid.name}
                                             imageUrl={droid.image}
-                                            // Asegúrate de que action navegue correctamente
                                             action={() => navigate(`/Details/${id}`)}
                                         />
                                     </div>

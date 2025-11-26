@@ -1,0 +1,52 @@
+.fondo {
+  background: black;
+  overflow: hidden;
+}
+
+
+.fondo::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: moveStars 60s linear infinite;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.tittle{
+  color: #ffe81f !important; 
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  text-shadow: 0 0 10px #ffe81f;
+  text-align: center;
+}
+.text-content{
+    color: white;
+    text-shadow: 0 0 5px #ffffff;
+    text-align: center;
+}
+
+.subtitle {
+  color: #ff3c00;
+  text-shadow: 0 0 8px #f34b4b;
+  margin-top: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+.text-center img {
+  border: 3px solid #ffe81f;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ffe81f;
+  margin-top: 20px;
+  height: 711px;
+  z-index: 1;
+}
+
+@keyframes moveStars {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-50%, -50%); }
+}

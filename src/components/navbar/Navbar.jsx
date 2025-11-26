@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg fondo fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">MiApp</Link>
+        <Link className="navbar-brand" to="/profile">Profile</Link>
         <button 
           className="navbar-toggler" 
           type="button" 
@@ -23,7 +23,7 @@ const Navbar = () => {
               <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/list">Listado</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/contact">Contáctanos</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/contact">Adopta!</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/aboutus">Sobre nosotros</NavLink>

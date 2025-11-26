@@ -1,11 +1,11 @@
-/* Fondo animado estilo espacio */
+
 .fondo {
   background: black;
   
   overflow: hidden;
 }
 
-/* Capa de estrellas */
+
 .fondo::before {
   content: "";
   position: absolute;
@@ -17,20 +17,20 @@
   z-index: 0;
 }
 
-/* Contenido encima */
+
 .navbar .container-fluid {
   position: relative;
   z-index: 1;
 }
 .navbar-brand,
 .nav-link {
-  color: #ffe81f !important; /* amarillo Star Wars */
+  color: #ffe81f !important; 
   position: relative;
   z-index: 2;
 }
 
 .nav-link:hover {
-  color: #fff !important; /* blanco al pasar el ratón */
+  color: #fff !important; 
   text-shadow: 0 0 8px #ffe81f;
 }
 
@@ -40,7 +40,6 @@
   text-shadow: 0 0 10px #ffe81f;
 }
 
-/* Animación de movimiento */
 @keyframes moveStars {
   from { transform: translate(0, 0); }
   to { transform: translate(-50%, -50%); }
