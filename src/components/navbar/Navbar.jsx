@@ -20,7 +20,8 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/list">Listado</NavLink>
+              <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/
+              ">Listado</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} to="/contact">Adopta!</NavLink>

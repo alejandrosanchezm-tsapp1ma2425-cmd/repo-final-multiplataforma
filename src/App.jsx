@@ -16,13 +16,13 @@ function App() {
     <>
       <Navbar/>
       <div className='fondonegro '>
-      <Routes>
-        <Route path="/list" element={<List />}/>
-        <Route path="/details/:id" element={<Details />}/>
-        <Route path='/profile' element={<Profile />}/>
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='/aboutus' element={<AboutUs />}/>
-      </Routes>
+        <Routes>
+          <Route path="" element={<List />}/>
+          <Route path="/details/:id" element={<Details />}/>
+          <Route path='/profile' element={<Profile />}/>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='/aboutus' element={<AboutUs />}/>
+        </Routes>
       </div>
     </>
   )

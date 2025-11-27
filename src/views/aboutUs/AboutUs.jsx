@@ -14,7 +14,7 @@ const AboutUs = () => {
             <div className='text-content'>
                 <p> This Web has been created by a fan of starwars, currently studing a developer degree.</p>
             </div>
-            <div className='text-center'>
+            <div className='darthvader'>
                 <img src={meme}/>
             </div>
         </div>

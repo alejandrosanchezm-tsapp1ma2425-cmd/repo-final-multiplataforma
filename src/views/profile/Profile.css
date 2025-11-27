@@ -1,29 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
 .profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 711px; /* ocupa toda la pantalla */
-  background-color: black;
   color: white;
   text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* efecto de estrellas */
+.profile-container::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: transparent url("https://www.transparenttextures.com/patterns/stardust.png") repeat;
+  animation: moveStars 60s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes moveStars {
+  from { transform: translate(0,0); }
+  to { transform: translate(-200px,-200px); }
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%; /* círculo */
-  background-color: #444; /* simula imagen de perfil */
+  background: linear-gradient(145deg, #444, #222);
   margin-bottom: 20px;
+  box-shadow: 0 0 20px #00faff, 0 0 40px #00faff inset;
+  border: 2px solid #00faff;
 }
 
 .profile-name {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 10px 0;
   color: #ffe81f; /* amarillo estilo Star Wars */
+  text-shadow: 0 0 10px #ffe81f, 0 0 20px #ffcc00;
+  letter-spacing: 2px;
 }
 
 .profile-email {
   font-size: 1rem;
   color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* descripción */
+.profile-description {
+  max-width: 400px;
+  font-size: 0.9rem;
+  color: #9cf;
+  margin: 15px 0;
+  line-height: 1.4;
+}
+
+/* stats */
+.profile-stats, .profile-abilities {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.profile-stats h3, .profile-abilities h3 {
+  color: #00faff;
+  text-shadow: 0 0 8px #00faff;
+  margin-bottom: 8px;
+}
+
+.profile-stats ul, .profile-abilities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-stats li, .profile-abilities li {
+  margin: 5px 0;
+  padding-left: 10px;
+  border-left: 2px solid #00faff;
+  transition: transform 0.3s ease;
+}
+
+.profile-stats li:hover, .profile-abilities li:hover {
+  transform: translateX(5px);
+  color: #ffe81f;
+}
+
+/* estado */
+.profile-status {
+  margin-top: 20px;
+}
+
+.status-online {
+  color: #0f0;
+  text-shadow: 0 0 10px #0f0;
+  font-weight: bold;
 }
